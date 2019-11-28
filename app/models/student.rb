@@ -3,7 +3,8 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def !self.active?
+  def self.active?
     "This student is currently inactive."
+    "This student is currently active"
   end
 end
